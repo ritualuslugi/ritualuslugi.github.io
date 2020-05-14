@@ -1,107 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+<!-- эти метаданные отображаются во вкладке браузера, когда открываешь ссылку + подключение каскадных таблиц стилей из файла styles.css, и еще это типа "start" для начала чтения документа --> 
 <head>
       <meta charset="utf-8">
       <title>Ritual uslugi</title>
       <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+    
 <body>
+    <!-- навигация -->
  <div class="container">
-
    <header>
        <ul class="top-menu">
-          <li><a href= "#block-Mycetozoa" >Магазин</a></li>
-          <li><a href= "#block-tech" >Услуги</a></li>
+          <li><a href="#shop" >Магазин</a></li> <!-- ссылка на раздел выполнена "якорем" -->
+          <li><a href="#client" >Услуги</a></li>
           <li><a href="#footer" >Контакты</a></li>
-          <li><a href="#" >Отзывы</a></li>
         </ul>
    </header>
-   
+
+     <!-- первое представление лендинга (в одностраничных сайтах нет так таковой главной страницы) -->
     <div class="top-image">
-        <img id="top-spore" src="images/foto_top.png">
+        <img id="top-jpg" src="images/foto_top.png"><!-- главное изображение из папки images -->
     </div>
 
-      <h1 class="shear">Ритуальные услуги<br>+7(987) 654-32-10<br>
+      <h1 class="shear">Ритуальные услуги<br>+7(987) 654-32-10<br> <!-- ТУТ МЕНЯЕМ НОМЕР -->
       <br></h1>
-      <p class="shear">Важно,чтобы Вы понимали, из чего<br>складывается цена на ритуальные услуги</p>
-      <a href="#"><img class="shear" id="button" src="images/btn.png"></a>
-      <p class="send"><a href="#">Узнать больше</a></p>
+      <p class="shear">Важно,чтобы Вы понимали, из чего<br>складывается цена на ритуальные услуги</p> <!-- эта строчка звучит не актуально, поэтому ее как бы нет -->
+      <a href="#more"><img class="shear" id="button" src="images/btn.png"></a>
+      <p class="send"><a href="#more">Узнать больше</a></p>
 
-   <section class="pink-block">
+     <!-- секция преимуществ сервиса, на этот раздел переводит кнопка УЗНАТЬ БОЛЬШЕ-->
+   <section class="black-block" id="more">
       <div class="shear block-size">
           <img class="icon-back"   src="images/icon-back.svg">
-          <img id="icon-hand"      src="images/icons8-часы-64.png">
+          <img id="icon-clock"      src="images/icons8-часы-64.png">
         <h3>С УВАЖЕНИЕМ К ВАШЕМУ ВРЕМЕНИ</h3>
-        <p>Оформим на высоком уровне обслуживания и без ожидания</p>
+        <p>Оформим на высоком уровне обслуживания и без ожидания
+          <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit</br></p>
        </div>
       <div class="shear-small block-size">
           <img class="icon-back"   src="images/icon-back.svg">
           <img id="icon-mol"       src="images/icons8-алмазный-уход-64.png">
         <h3>С ПОНИМАНИЕМ И УВАЖЕНИЕМ</h3>
-        <p>В этот сложный период вашей жизни мы готовы помочь отправить близкого человека в последний путь</p>
+        <p>В этот сложный период вашей жизни мы готовы помочь отправить близкого человека в последний путь
+            <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit</br></p>
        </div>
       <div class="shear-small block-size">
           <img class="icon-back"   src="images/icon-back.svg">
           <img id="icon-round"     src="images/icons8-прослушивание-80.png">
-        <h3>С ЛИЧНЫМ ВНИМАНИЕМ</h3>
-        <p><br>Наши специалисты окажут Вам помощь</p>
+        <h3>С ЛИЧНЫМ ВНИМАНИЕМ К ВАМ И ВАШЕЙ СЕМЬЕ</h3>
+        <p>Специалисты окажут Вам помощь в любых вопросах, которые находятся в области компетенций наших услуг.
+            <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit</br></p>
        </div>
    </section>
 
-  <img class="blue-spore"  src="images/foto bio.png">
+  <img class="bio"  src="images/foto bio.png"> <!-- венок -->
 
-   <section id="Mycetozoa" class="shear">
+   <section class="shear" id="shop">
   <h2>Магазин</h2>
-  <p><table border="1">
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Корзина-венок</td><td>высота:60см</td><td>340</td></tr>
-       <tr><td>Корзина-венок</td><td>высота:105см</td><td>1340</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
- </table> </p>
+  <p><table class="table_price"> <!-- это таблица, ее стиль можно поменять просто добавив в файл styles.css доп.хар-ки, а ссылки на изображения прикрепить к наименованиям,которые работают, как кнопки. Или вообще можно снести дизайн и поставить просто табличку, как в макете -->
+   <caption></caption>
+<tr>
+  <th>Наименование</th>
+  <th colspan="2">Хар-ки</th>
+</tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Корзина-венок</a></td><td>высота:60см</td><td>340</td></tr>
+       <tr><td><a>Корзина-венок</a></td><td>высота:105см</td><td>1340</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       </table> </p>
    </section>
 
-   <img class="orange-spore" src="images/cata.png">
+   <img class="cata" src="images/cata.png"> <!-- катафалк -->
 
-   <section id="tech" class="shear-big">
+   <section class="shear-big" id="client">
   <h2>Услуги</h2>
-  <p> <table border="1">
-       <tr><td>Заливка бетона</td><td>с материалом</td><td>от 1200 руб и выше м.кв.</td></tr>
-       <tr><td>Корзина-венок</td><td>высота:60см</td><td>340</td></tr>
-       <tr><td>Корзина-венок</td><td>высота:105см</td><td>1340</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
-       <tr><td>Наименование</td><td>Хар-ки</td><td>Цена,руб</td></tr>
- </table> </p>
+  <p> <table class="table_price">
+       <caption></caption>
+<tr>
+  <th>Наименование</th>
+  <th colspan="2">Хар-ки</th> <!-- такая же история, как с предыдущей таблицей -->
+</tr>
+       <tr><td><a>Заливка бетон</a></td><td>с материалом</td><td>от 1200 руб </td></tr>
+       <tr><td><a>Корзина-венок</a></td><td>высота:60см</td><td>340</td></tr>
+       <tr><td><a>Корзина-венок</a></td><td>высота:105см</td><td>1340</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>
+       <tr><td><a>Наименование</a></td><td>Хар-ки</td><td>Цена,руб</td></tr>  
+ </table>
+    </p>
    </section>
 
-   <footer class="contacts" id="footer">
+   <footer class="contacts" id="footer"> <!-- вероятнее всего, таблички будут больше, так что футер надо будет сместить вниз, и таким образом общий объем лендинга увеличится -->
 
-     <p class="b1 shear">Ритуальные услуги<br>Магазин<br>
+     <p class="b1 shear"><br>Ритуальные услуги<br>
      Памятники<br>Катафалк<br>
      Автобус<br>Всё для погребения</p>
      <p class="shear">© 2020 ИП Охрименко М.Е.<br>
       Все права защищены.</p>
      <p class="b3 shear-right">Наши контакты</p>
-     <p class="b4 shear-right">ritual_uslugi@mail.ru</p>
+     <img class="icons-social" src="images/icons8-одноклассники-50.png"> <!-- ТУТ ДОБАВЛЯЕМ ССЫЛКУ -->
+     <img class="icons-social2" src="images/icons8-вконтакте-48.png"> <!-- ТУТ ДОБАВЛЯЕМ ССЫЛКУ -->
+     <p class="b4 shear-right">ritual_uslugi@mail.ru</p><!-- ТУТ МЕНЯЕМ АДРЕС -->
 
    </footer>
 
